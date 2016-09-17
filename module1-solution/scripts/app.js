@@ -10,8 +10,7 @@ function LunchCheckController($scope) {
 	$scope.lunchMessage='';
 
 	$scope.calculateLunch = function()  {
-		console.log($scope.dishes);
-
+		
 		if($scope.dishes != null ) {
 			var arrayOfDishes = $scope.dishes.split(',');
 			if (arrayOfDishes.length <= 3) {
@@ -20,7 +19,7 @@ function LunchCheckController($scope) {
 				$scope.lunchMessage='Too much!';
 			}
 		} else {
-			$scope.lunchMessage='Please enter the dishes you have for lunch';
+			$scope.lunchMessage='Please enter data first';
 		}
 	}
 }
