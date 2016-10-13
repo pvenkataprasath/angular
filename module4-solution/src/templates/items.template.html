@@ -1,0 +1,9 @@
+
+<a ui-sref="home">Home</a> &lt;
+<a ui-sref="categories">List</a> 
+
+<ul>
+  <li ng-repeat="item in itemListCtrl.item_details.menu_items">
+    <b>Name:</b> {{ item.name }}  ~  <b>Description:</b>{{ item.description }} ~ <b> Price:  Large  </b> ${{item.price_large}} ~ <b> Small </b> ${{item.price_small}}
+  </li>
+</ul> 
