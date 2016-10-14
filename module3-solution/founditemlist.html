@@ -1,0 +1,16 @@
+<br>
+
+
+
+<div  ng-show=" items.length ==0 && searched=='Y' " > No Items Found! </div>
+
+<div ng-show="items.length > 0">
+  <li ng-repeat="item in items">
+ ({{item.short_name}} ) {{item.name}} -  {{item.description}}
+  <button ng-click="onRemove({index: $index});">Remove Item</button>
+ </li>
+
+  </div>
+ 
+
+ 
